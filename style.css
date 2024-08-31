@@ -640,13 +640,13 @@ nav{
     }
 
     .navlinks-container a:first-child{
-        margin-top: -300px;
+        margin-top: -400px;
     }
 
     .mobile-nav-logo{
         display: block;
         position: relative;
-        transform: translateY(100px);
+        transform: translateY(50px);
     }
 
     .introduction{
