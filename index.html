@@ -172,57 +172,40 @@
             </div>
         </section>
         <section class="contact">
-            <h2 class="contact-title">Contact</h2>
-            <div class="contact-container">
-                <div class="bloc-contact-text">
-                    <div class="contact-top">
-                        <div class="coordonnees">
-                            <h3 class="contact-subtitle">Coordonnées</h3>
-                            <ul>
-                                <li><img src="src/img/icon-face.png" alt="icone" height="24px"> Aphton MINNE</li>
-                                <li><img src="src/img/icon-location.png" alt="icone" height="24px"> 41 rue Denfert Rochereau, <br> &nbsp; &nbsp; &nbsp; &nbsp;TOURCOING 59200</li>
-                                <li><img src="src/img/icon-phone.png" alt="icone" height="24px"> <a href="tel:+33600000000">06.01.00.00.00</a></li>
-                                <li><img src="src/img/icon-mail.png" alt="icone" height="24px"> <a href="mailto:aphton@hotmail.fr">aphton@hotmail.fr</a></li>
-                            </ul>
-                        </div>
-                        <div class="horaires">
-                            <h3 class="contact-subtitle">Horaires</h3>
-                            <ul>
-                                <li>Lundi : 9h à 20h</li>
-                                <li>Mardi : 9h à 20h</li>
-                                <li>Mercredi : 9h à 20h</li>
-                                <li>Jeudi : 9h à 20h</li>
-                                <li>Vendredi : 9h à 20h</li>
-                                <li>Samedi : 9h à 13h</li>
-                            </ul>
-                        </div>
-                        <div class="social">
-                            <h3 class="contact-subtitle">Réseaux sociaux</h3>
-                            <div class="social-liens">
-                                <a href="#" target="_blank"><p class="article-text"><i class="fa-brands fa-facebook"></i></p></a>
-                                <a href="#" target="_blank"><p class="article-text"><i class="fa-brands fa-instagram"></i></p></a>
-                            </div>
-                            <a href="https://www.resalib.fr/praticien/82250-ei-aphton-minne-hypno-lyfe-sophrologue-tourcoing" class="contact-btn">Prendre rendez-vous</a>
-                        </div>
-                    </div>
-                    <div class="contact-bottom">
-                        <div class="infos">
-                            <h3 class="contact-subtitle">Infos pratiques</h3>
-                            <p class="article-text">Comment se rendre au cabinet?</p>
-                            <ul>
-                                <li><img src="src/img/icon-subway.png" alt="icone" height="24px"> Prendre la ligne 2 du métro, sortie Alsace</li>
-                                <li><img src="src/img/icon-train.png" alt="icone" height="24px"> Sortir gare de Roubaix</li>
-                                <li><img src="src/img/icon-car.png" alt="icone" height="24px"> Quartier du blanc seau à Tourcoing, proche Mouvaux</li>
-                            </ul> <br>
-                            <p class="article-text">
-                                L'accès au cabinet s'effectue par des escaliers. <br>Pour les personnes à mobilité réduite, il est préférable d'opter pour des séances à domicile ou en visio.
-                            </p>
-                        </div>
-                    </div>
+            <div class="contact-left">
+                <h2 class="subtitle-dark">Ou me retrouver?</h2>
+                <p class="text-dark">
+                    Je vous propose des séances à domicile, en visio, et à mon cabinet. <br><br>
+                    L'accès au cabinet s'effectue par des escaliers. <br><br> Pour les personnes à mobilité réduite, il est préférable d'opter pour des séances à domicile ou en visio. <br><br>
+                    Je suis disponible du lundi au vendredi de 9h à 20h, et le samedi de 9h à 13h.
+                </p>
+                <ul class="contact-list">
+                    <li><img src="src/img/icon-location.png" alt="icone" height="24px"> 41 rue Denfert Rochereau, TOURCOING 59200</li>
+                    <li><img src="src/img/icon-phone.png" alt="icone" height="24px"> <a href="tel:+33600000000">06.01.00.00.00</a></li>
+                    <li><img src="src/img/icon-mail.png" alt="icone" height="24px"> <a href="mailto:aphton@hotmail.fr">aphton@hotmail.fr</a></li>
+                </ul>
+                <h4 class="contact-subtitle">Connectons nous!</h4>
+                <div class="social-liens">
+                    <a href="#" target="_blank"><p class="article-text"><i class="fa-brands fa-facebook"></i></p></a>
+                    <a href="#" target="_blank"><p class="article-text"><i class="fa-brands fa-instagram"></i></p></a>
                 </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.284530032736!2d3.1514200999999993!3d50.696104299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b01e86c55b349f%3A0xa9ee6d0a23ec934b!2sMinne%20Aphton%20Hypno&#39;Lyfe!5e0!3m2!1sfr!2sfr!4v1723407808512!5m2!1sfr!2sfr" width="550" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            </div>
+            <div class="contact-right">
+                <h2 class="subtitle-white">Contactez moi!</h2>
+                <form action="index.html" method="post" class="contact-form">        
+                    <div class="input-wrap">
+                        <label for="First Name">Prénom <i class="fa-regular fa-address-card"></i></label>
+                        <input class="contact-input" autocomplete="given-name" name="First Name" type="text" required><br>
+                        <label for="Last Name">Nom <i class="fa-regular fa-address-card"></i></label>
+                        <input class="contact-input" autocomplete="family-name" name="Last Name" type="text" required><br>
+                        <label for="E-mail">E-mail <i class="fa-solid fa-envelope"></i></label>
+                        <input class="contact-input" autocomplete="email" name="E-mail" type="text" required><br>
+                        <label for="phone">Téléphone <i class="fa-solid fa-phone"></i></label>
+                        <input class="contact-input" name="phone" autocomplete="tel">
+                    </div>
+                        <label for="E-mail">Message <i class="fa-solid fa-inbox"></i></label>
+                        <textarea class="contact-input" name="Message" autocomplete="off" required></textarea>
+                </form>
             </div>
         </section>
     </main>

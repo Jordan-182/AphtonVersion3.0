@@ -148,9 +148,34 @@ nav{
 .subtitle{
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--lavande);
     font-family: var(--secondary-font);
     margin-bottom: 10px;
+}
+.subtitle-white{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blanc);
+    font-family: var(--secondary-font);
+    margin-bottom: 20px;
+}
+
+.subtitle-dark{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--bleu-ardoise);
+    font-family: var(--secondary-font);
+    margin-bottom: 20px;
+}
+
+.text-white{
+    font-family: var(--primary-font);
+    color: var(--blanc);
+}
+
+.text-dark{
+    font-family: var(--primary-font);
+    color: var(--bleu-ardoise);
 }
 
 /* CETTE PARTIE CONCERNE LE CONTENU DE LA HERO SECTION */
@@ -173,7 +198,23 @@ nav{
     font-family: var(--secondary-font);
     text-align: center;
     margin-bottom: 50px;
+    position: relative;
 }
+
+/* .slogan::before{
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    height: 120%;
+    width: 105%;
+    background: var(--lavande);
+    border-radius: 50px;
+    opacity: 0.4;
+    filter: blur(5px);
+    transform: rotate(3deg);
+    z-index: -1;
+} */
 
 .slogan-auteur{
     font-family: var(--secondary-font);
@@ -273,7 +314,7 @@ nav{
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
+    background: var(--blanc);
     padding: 0 80px;
 }
 
@@ -352,12 +393,12 @@ nav{
 
 .services{
     padding: 60px 30px;
-    background: linear-gradient(to bottom right , var(--lavande) , var(--bleu-ardoise));
+    background: linear-gradient(to right bottom, #4b5d67, #596b7d, #6b7992, #8386a6, #9f92b7, #9f92b7, #9f92b7, #9f92b7, #8386a6, #6b7992, #596b7d, #4b5d67);
 }
 
 .services-title{
     font-size: 2rem;
-    color: var(--third-color);
+    color: var(--bleu-ardoise);
     font-family: var(--secondary-font);
     text-align: center;
 }
@@ -374,17 +415,12 @@ nav{
 .service-card{
     width: 350px;
     height: 545px;
-    border: 2px solid var(--third-color);
-    background-color: #ffffff;
+    border: 2px solid var(--bleu-ardoise);
+    background-color: var(--blanc);
     padding: 20px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover{
-    transform: translateY(-5px);
 }
 
 .service-card img{
@@ -396,113 +432,80 @@ nav{
 /* CETTE PARTIE CONCERNE LE BANDEAU CONTACT */
 
 .contact{
-    padding: 60px 30px;
-    background: linear-gradient(to bottom left , var(--bleu-ardoise) , var(--lavande));
+    /* background: linear-gradient(to left bottom, #4b5d67, #596b7d, #6b7992, #8386a6, #9f92b7, #9f92b7, #9f92b7, #9f92b7, #8386a6, #6b7992, #596b7d, #4b5d67); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.contact-title{
-    font-size: 2rem;
-    color: #ffffff;
-    font-family: var(--secondary-font);
-    text-align: center;
+.contact-left{
+    padding: 60px 30px;
+    background: var(--blanc);
+    color: var(--bleu-ardoise);
+}
+
+.contact-list{
+    margin: 10px 0;
+}
+
+.contact-list a{
+    color: inherit;
+}
+
+.contact-list img{
+    transform: translateY(5px);
 }
 
 .contact-subtitle{
-    font-size: 1.5rem;
-    font-family: var(--secondary-font);
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.contact-container{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    color: #ffffff;
-    margin-top: 20px;
-}
-
-.bloc-contact-text{
-    width: 650px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contact-top{
-    display: flex;
-    gap: 30px;
-}
-
-.coordonnees img{
-    transform: translateY(6px);
-}
-
-.coordonnees a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.coordonnees ul{
-    margin-top: -10px;
-}
-
-.social .article-text i{
-    font-size: 3rem;
-    color: #ffffff;
+    margin: 15px 0;
+    font-weight: bold;
 }
 
 .social-liens{
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
 }
 
-.contact-btn{
-    width: 100%;
-    padding: 10px ;
-    border-radius: 5px;
-    margin-top: auto;
-    background: var(--blanc);
+.social-liens a{
     color: var(--bleu-ardoise);
-    border: 2px solid var(--bleu-ardoise);
-    text-align: center;
-    align-items: center;
-    transition: 0.3s ease-in-out;
+    margin-right: 10px;
+    font-size: 2rem;
 }
 
-.contact-btn:hover{
+.contact-right{
     background: var(--bleu-ardoise);
-    border: 2px solid var(--bleu-ardoise);
     color: var(--blanc);
+    padding: 60px 30px;
 }
 
-.horaires ul li{
-    margin-bottom: 4px;
-}
-
-.infos{
+.contact-form{
+    width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-.infos .article-text{
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.infos ul{
-    margin: 0 auto;
-}
-
-.infos img{
-    transform: translateY(6px);
-}
-
-.contact iframe{
+.contact-input{
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
+    border: 1px solid transparent;
+    color: var(--bleu-ardoise);
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contact-input:focus{
+    outline: none;
+    border: 1px solid var(--bleu-ardoise);
+    caret-color: var(--bleu-ardoise);
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    padding: 10px;
 }
 
 /* FIN DU BANDEAU CONTACT */
@@ -512,7 +515,7 @@ nav{
 .footer{
     width: 100%;
     background: #ffffff;
-    color: var(--third-color);
+    color: var(--bleu-ardoise);
     text-align: center;
     padding: 15px 0;
     margin-top: 45px;
@@ -620,7 +623,7 @@ nav{
         align-items: center;
         justify-content: center;
         position: absolute;
-        background: #ffffff;
+        background: var(--blanc);
         top: 100%;
         width: 100%;
         right: 0;
@@ -634,7 +637,7 @@ nav{
      }
 
     .navlinks-container a{
-        color: var(--third-color);
+        color: var(--bleu-ardoise);
         font-size: 24px;
         margin: 10px 0;
     }
