@@ -201,21 +201,6 @@ nav{
     position: relative;
 }
 
-/* .slogan::before{
-    content: '';
-    position: absolute;
-    top: -12px;
-    left: 0;
-    height: 120%;
-    width: 105%;
-    background: var(--lavande);
-    border-radius: 50px;
-    opacity: 0.4;
-    filter: blur(5px);
-    transform: rotate(3deg);
-    z-index: -1;
-} */
-
 .slogan-auteur{
     font-family: var(--secondary-font);
     font-size: 1.5rem;
@@ -439,12 +424,13 @@ nav{
 
 .contact-left{
     padding: 60px 30px;
-    background: var(--blanc);
+    background: linear-gradient(to top left, var(--lavande) , var(--blanc));
     color: var(--bleu-ardoise);
 }
 
-.contact-list{
-    margin: 10px 0;
+.contact-left-bottom{
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-list a{
@@ -462,6 +448,7 @@ nav{
 
 .social-liens{
     display: flex;
+    margin-bottom: 25px;
 }
 
 .social-liens a{
@@ -470,14 +457,36 @@ nav{
     font-size: 2rem;
 }
 
-.contact-right{
+.contact-cta{
     background: var(--bleu-ardoise);
     color: var(--blanc);
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid var(--bleu-ardoise);
+    transition: 0.3s ease;
+}
+
+.contact-cta:hover{
+    background: var(--blanc);
+    color: var(--bleu-ardoise);
+}
+
+.contact-left iframe{
+    border-radius: 10px;
+    margin: 15px auto 0;
+}
+
+.contact-right{
+    background: linear-gradient(to bottom left, var(--blanc) , var(--lavande));
+    color: var(--bleu-ardoise);
     padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-form{
-    width: 800px;
+    width: calc(100% - 60px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -486,10 +495,9 @@ nav{
 .contact-input{
     width: calc(100% - 40px);
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid transparent;
+    margin-top: 5px;
+    border: 1px solid var(--bleu-ardoise);
     color: var(--bleu-ardoise);
     font-family: inherit;
     outline: none;
@@ -498,7 +506,7 @@ nav{
 
 .contact-input:focus{
     outline: none;
-    border: 1px solid var(--bleu-ardoise);
+    border: 2px solid var(--bleu-ardoise);
     caret-color: var(--bleu-ardoise);
 }
 
@@ -506,6 +514,25 @@ textarea{
     resize: none;
     height: 100px;
     padding: 10px;
+}
+
+.form-btn{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid var(--bleu-ardoise);
+    margin: 10px auto 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.005rem;
+    background: var(--blanc);
+    color: var(--bleu-ardoise);
+    transition: 0.3s ease;
+}
+
+.form-btn:hover{
+    color: var(--blanc);
+    background: var(--bleu-ardoise);
 }
 
 /* FIN DU BANDEAU CONTACT */

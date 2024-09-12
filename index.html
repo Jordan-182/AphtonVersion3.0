@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="hero-right">
-                <img src="src/img/Psychologist-rafiki (1).png" alt="illustration hero section" height="600" width="600">
+                <img src="src/img/Psychologist-rafiki (1).png" alt="illustration hero section" height="auto" width="600">
             </div>
         </section>
         <section class="services">
@@ -177,34 +177,50 @@
                 <p class="text-dark">
                     Je vous propose des séances à domicile, en visio, et à mon cabinet. <br><br>
                     L'accès au cabinet s'effectue par des escaliers. <br><br> Pour les personnes à mobilité réduite, il est préférable d'opter pour des séances à domicile ou en visio. <br><br>
-                    Je suis disponible du lundi au vendredi de 9h à 20h, et le samedi de 9h à 13h.
                 </p>
-                <ul class="contact-list">
-                    <li><img src="src/img/icon-location.png" alt="icone" height="24px"> 41 rue Denfert Rochereau, TOURCOING 59200</li>
-                    <li><img src="src/img/icon-phone.png" alt="icone" height="24px"> <a href="tel:+33600000000">06.01.00.00.00</a></li>
-                    <li><img src="src/img/icon-mail.png" alt="icone" height="24px"> <a href="mailto:aphton@hotmail.fr">aphton@hotmail.fr</a></li>
-                </ul>
-                <h4 class="contact-subtitle">Connectons nous!</h4>
-                <div class="social-liens">
-                    <a href="#" target="_blank"><p class="article-text"><i class="fa-brands fa-facebook"></i></p></a>
-                    <a href="#" target="_blank"><p class="article-text"><i class="fa-brands fa-instagram"></i></p></a>
+                <div class="contact-left-bottom">
+                        <ul class="contact-list">
+                            <h4 class="contact-subtitle">Mes coordonnées:</h4>
+                            <li><i class="fa-solid fa-location-dot"></i> 41 rue Denfert Rochereau, <br>  &nbsp; &nbsp; &nbsp;TOURCOING 59200</li> <br>
+                            <li><i class="fa-solid fa-phone"></i> <a href="tel:+33600000000">06.01.00.00.00</a></li> <br>
+                            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:aphton@hotmail.fr">aphton@hotmail.fr</a></li>
+                        </ul>
+                        <div class="horaires">
+                            <h4 class="contact-subtitle">Mes horaires:</h4>
+                            <ul>
+                                <li>Lundi : 9h à 20h</li>
+                                <li>Mardi : 9h à 20h</li>
+                                <li>Mercredi : 9h à 20h</li>
+                                <li>Jeudi : 9h à 20h</li>
+                                <li>Vendredi : 9h à 20h</li>
+                                <li>Samedi : 9h à 13h</li>
+                            </ul>
+                        </div> 
+                        <div class="social">
+                            <h4 class="contact-subtitle">Connectons nous!</h4>
+                            <div class="social-liens">
+                                <a href="#" target="_blank"><p class="article-text"><i class="fa-brands fa-facebook"></i></p></a>
+                                <a href="#" target="_blank"><p class="article-text"><i class="fa-brands fa-instagram"></i></p></a>
+                            </div>
+                            <a href="https://www.resalib.fr/praticien/82250-ei-aphton-minne-hypno-lyfe-sophrologue-tourcoing" class="contact-cta">Prendre rendez-vous</a>
+                        </div>
                 </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.284530032736!2d3.1514200999999993!3d50.696104299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b01e86c55b349f%3A0xa9ee6d0a23ec934b!2sMinne%20Aphton%20Hypno&#39;Lyfe!5e0!3m2!1sfr!2sfr!4v1726147800130!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contact-right">
-                <h2 class="subtitle-white">Contactez moi!</h2>
+                <h2 class="subtitle-dark">Contactez moi!</h2>
                 <form action="index.html" method="post" class="contact-form">        
-                    <div class="input-wrap">
-                        <label for="First Name">Prénom <i class="fa-regular fa-address-card"></i></label>
-                        <input class="contact-input" autocomplete="given-name" name="First Name" type="text" required><br>
-                        <label for="Last Name">Nom <i class="fa-regular fa-address-card"></i></label>
-                        <input class="contact-input" autocomplete="family-name" name="Last Name" type="text" required><br>
-                        <label for="E-mail">E-mail <i class="fa-solid fa-envelope"></i></label>
-                        <input class="contact-input" autocomplete="email" name="E-mail" type="text" required><br>
-                        <label for="phone">Téléphone <i class="fa-solid fa-phone"></i></label>
-                        <input class="contact-input" name="phone" autocomplete="tel">
-                    </div>
-                        <label for="E-mail">Message <i class="fa-solid fa-inbox"></i></label>
-                        <textarea class="contact-input" name="Message" autocomplete="off" required></textarea>
+                        <label for="First Name" class="form-label">Prénom <i class="fa-regular fa-address-card"></i></label>
+                        <input class="contact-input" autocomplete="given-name" name="First Name" id="First Name" type="text" placeholder="Votre prénom" required><br>
+                        <label for="Last Name" class="form-label">Nom <i class="fa-regular fa-address-card"></i></label>
+                        <input class="contact-input" autocomplete="family-name" name="Last Name" id="Last Name" type="text" placeholder="Votre nom" required><br>
+                        <label for="E-mail" class="form-label">E-mail <i class="fa-solid fa-envelope"></i></label>
+                        <input class="contact-input" autocomplete="email" name="E-mail" id="E-mail" type="text" placeholder="Votre adresse e-mail" required><br>
+                        <label for="phone" class="form-label">Téléphone <i class="fa-solid fa-phone"></i></label>
+                        <input class="contact-input" autocomplete="tel" name="phone" id="phone" placeholder="Votre téléphone (facultatif)"> <br>
+                        <label for="E-mail" class="form-label">Message <i class="fa-solid fa-inbox"></i></label>
+                        <textarea class="contact-input" name="Message" autocomplete="off" placeholder="Votre message..." required></textarea>
+                        <input type="submit" class="form-btn">
                 </form>
             </div>
         </section>
