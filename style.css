@@ -551,6 +551,22 @@ textarea{
 
 /* FIN DU FOOTER */
 
+/* PAGE ABOUT */
+
+.page-container{
+    height: 100vh;
+    background: linear-gradient(to top right , var(--lavande) , var(--blanc));
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.about-photos{}
+
+.about-text{}
+
+/* FIN PAGE ABOUT */
+
 @media only screen and (max-width: 1270px){
     .contact-container{
         display: flex;
@@ -697,7 +713,7 @@ textarea{
     }
 
     .navlinks-container a:first-child{
-        margin-top: -300px;
+        margin-top: -200px;
     }
 
     .mobile-nav-logo{
@@ -884,7 +900,7 @@ textarea{
     .avis{
         padding: 60px 5px;
     }
-    
+
     .service-card{
         height: 670px;
     }
