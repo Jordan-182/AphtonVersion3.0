@@ -546,6 +546,10 @@ textarea{
     color: var(--bleu-ardoise);
     text-align: center;
     padding: 15px 0;
+    border-top: 2px solid var(--lavande);
+}
+
+.index-footer{
     margin-top: 45px;
 }
 
@@ -553,17 +557,67 @@ textarea{
 
 /* PAGE ABOUT */
 
-.page-container{
-    height: 100vh;
-    background: linear-gradient(to top right , var(--lavande) , var(--blanc));
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+.about-page{
+    background: linear-gradient(to right , var(--lavande), var(--blanc) 25%);
 }
 
-.about-photos{}
+.page-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
-.about-text{}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    gap: 10px;
+}
+
+.avatar img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--bleu-ardoise);
+}
+
+.diplomes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.about-right{
+    padding: 60px 30px;
+}
+
+.about-right .slogan{
+    margin-bottom: 20px;
+}
+
+.about-right .subtitle{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-right a{
+    color: var(--bleu-ardoise);
+}
+
+.about-photos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+.about-photos img{
+    border-radius: 5px;
+}
 
 /* FIN PAGE ABOUT */
 
@@ -608,6 +662,25 @@ textarea{
         width: calc(100% - 60px);
         background: linear-gradient(to top right, var(--blanc) , var(--lavande));
         order: -1;
+    }
+
+    .about-photos{
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 1040px){
+    .about-photos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photos img:first-child{
+        transform: translateX(-100px);
+    }
+
+    .about-photos img:last-child{
+        transform: translateX(100px);
     }
 }
 
@@ -754,6 +827,27 @@ textarea{
         display: flex;
         flex-direction: column;
     }
+
+    .about-page{
+        background: linear-gradient(to bottom , var(--lavande), var(--blanc) 25%, var(--blanc) 75%, var(--lavande) 100%);
+    }
+
+    .page-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-right{
+        padding-top: 30px;
+    }
+
+    .about-photos img:first-child{
+        transform: none;
+    }
+
+    .about-photos img:last-child{
+        transform: none;
+    }
 }
 
 @media only screen and (max-width: 760px){
@@ -848,6 +942,11 @@ textarea{
     .slider section{
         padding: 0 45px;
     }
+
+    .about-photos img{
+        width: 400px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -884,6 +983,11 @@ textarea{
     .slider section{
         padding: 0 40px;
     }
+
+    .about-photos img{
+        width: 350px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 440px){
@@ -903,5 +1007,10 @@ textarea{
 
     .service-card{
         height: 670px;
+    }
+
+    .about-photos img{
+        width: 300px;
+        height: auto;
     }
 }
