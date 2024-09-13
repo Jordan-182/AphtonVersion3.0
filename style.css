@@ -817,6 +817,10 @@ textarea{
         height: 450px;
     }
 
+    .avis{
+        padding: 60px 15px;
+    }
+
     .avis-list{
         width: 400px;
     }
@@ -863,5 +867,25 @@ textarea{
 
     .slider section{
         padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .services{
+        padding: 60px 15px;
+    }
+
+    .service-card{
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width: 406px){
+    .avis{
+        padding: 60px 5px;
+    }
+    
+    .service-card{
+        height: 670px;
     }
 }
