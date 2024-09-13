@@ -398,8 +398,8 @@ nav{
 }
 
 .service-card{
-    width: 350px;
-    height: 600px;
+    width: 370px;
+    height: 620px;
     border: 2px solid var(--bleu-ardoise);
     background-color: var(--blanc);
     padding: 10px 20px 20px;
@@ -719,6 +719,14 @@ textarea{
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-input{
+        width: calc(100% - 30px);
     }
 
     .infos{
