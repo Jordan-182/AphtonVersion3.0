@@ -40,7 +40,7 @@ nav{
     width: calc(100% - 50px);
     display: flex;
     align-items: center;
-    padding: 15px 25px;
+    padding: 10px 25px;
     background: var(--blanc);
     box-shadow: inset 0px -3px 0px var(--lavande);
     font-family: var(--primary-font);
@@ -55,7 +55,7 @@ nav{
 }
 
 .nav-icon img{
-    height: 55px;
+    height: 50px;
     width: auto;
 }
 
@@ -150,7 +150,7 @@ nav{
     font-weight: bold;
     color: var(--lavande);
     font-family: var(--secondary-font);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .subtitle-white{
     font-size: 2rem;
@@ -378,7 +378,7 @@ nav{
 
 .services{
     padding: 60px 30px;
-    background: linear-gradient(to right bottom, #4b5d67, #596b7d, #6b7992, #8386a6, #9f92b7, #9f92b7, #9f92b7, #9f92b7, #8386a6, #6b7992, #596b7d, #4b5d67);
+    background: linear-gradient(to bottom right, var(--blanc) , var(--lavande));
 }
 
 .services-title{
@@ -393,16 +393,16 @@ nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
 }
 
 .service-card{
     width: 350px;
-    height: 545px;
+    height: 600px;
     border: 2px solid var(--bleu-ardoise);
     background-color: var(--blanc);
-    padding: 20px;
+    padding: 10px 20px 20px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -418,12 +418,13 @@ nav{
 
 .contact{
     /* background: linear-gradient(to left bottom, #4b5d67, #596b7d, #6b7992, #8386a6, #9f92b7, #9f92b7, #9f92b7, #9f92b7, #8386a6, #6b7992, #596b7d, #4b5d67); */
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
 }
 
 .contact-left{
     padding: 60px 30px;
+    width: 50%;
     background: linear-gradient(to top left, var(--lavande) , var(--blanc));
     color: var(--bleu-ardoise);
 }
@@ -478,6 +479,7 @@ nav{
 
 .contact-right{
     background: linear-gradient(to bottom left, var(--blanc) , var(--lavande));
+    width: 50%;
     color: var(--bleu-ardoise);
     padding: 60px 30px;
     display: flex;
@@ -517,14 +519,13 @@ textarea{
 }
 
 .form-btn{
-    height: 50px;
+    height: 40px;
     width: 100px;
     border-radius: 5px;
     border: 1px solid var(--bleu-ardoise);
     margin: 10px auto 0;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.005rem;
     background: var(--blanc);
     color: var(--bleu-ardoise);
     transition: 0.3s ease;
@@ -572,6 +573,26 @@ textarea{
     .hero-left{
         padding-bottom: 50px;
     }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact-left{
+        width: calc(100% - 60px);
+        padding-top: 0;
+    }
+
+    .contact-left-bottom{
+        justify-content: center;
+        gap: 150px;
+    }
+
+    .contact-right{
+        width: calc(100% - 60px);
+        background: linear-gradient(to top right, var(--blanc) , var(--lavande));
+        order: -1;
+    }
 }
 
 @media only screen and (max-width: 960px){
@@ -585,6 +606,12 @@ textarea{
 
     .avis-card{
         margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .contact-left-bottom{
+        gap: 50px;
     }
 }
 
@@ -720,6 +747,21 @@ textarea{
     .hero-right img{
         width: 500px;
         height: 500px;
+    }
+
+    .contact-left-bottom{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .social-liens{
+        justify-content: center;
+    }
+
+    .social{
+        margin-bottom: 20px;
     }
 }
 
