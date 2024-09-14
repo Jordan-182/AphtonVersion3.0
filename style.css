@@ -545,12 +545,18 @@ textarea{
     background: #ffffff;
     color: var(--bleu-ardoise);
     text-align: center;
-    padding: 15px 0;
+    padding: 25px 0;
     border-top: 2px solid var(--lavande);
 }
 
 .index-footer{
-    margin-top: 45px;
+    margin-top: 85px;
+    width: 100%;
+    background: #ffffff;
+    color: var(--bleu-ardoise);
+    text-align: center;
+    padding: 25px 0;
+    border-top: 2px solid var(--lavande);
 }
 
 /* FIN DU FOOTER */
@@ -562,7 +568,8 @@ textarea{
 }
 
 .page-container{
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -572,7 +579,7 @@ textarea{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 60px;
+    padding: 40px 60px 0;
     gap: 10px;
 }
 
@@ -581,6 +588,13 @@ textarea{
     width: 300px;
     border-radius: 50%;
     border: 2px solid var(--bleu-ardoise);
+}
+
+.about-subtitle{
+    font-weight: bold;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .diplomes{
@@ -592,7 +606,7 @@ textarea{
 }
 
 .about-right{
-    padding: 60px 30px;
+    padding: 40px 30px 60px;
 }
 
 .about-right .slogan{
@@ -612,7 +626,7 @@ textarea{
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .about-photos img{
@@ -620,6 +634,149 @@ textarea{
 }
 
 /* FIN PAGE ABOUT */
+
+/* PAGES DES SERVICES */
+
+.service-page-container{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title{
+    margin: 40px auto 30px auto;
+}
+
+.page-title .slogan{
+    margin-bottom: 10px;
+}
+
+.service-page-intro{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.service-page-intro-left{
+    padding: 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service-page-intro-left h3,
+.service-page-benefits h3,
+.service-page-seance h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--secondary-font);
+}
+
+.service-page-intro-right{
+    padding: 0 40px 40px;
+}
+
+.service-page-card{
+    border: 2px solid var(--lavande);
+    border-radius: 5px;
+    padding: 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.caption{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.service-page-cta{
+    color: var(--blanc);
+    background: var(--bleu-ardoise);
+    border: 2px solid var(--bleu-ardoise);
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 10px 0 5px;
+    text-align: center;
+    cursor: pointer;
+    transition : 0.3s ease;
+}
+
+.service-page-cta:hover{
+    color: var(--bleu-ardoise);
+    background: var(--blanc);
+}
+
+.service-page-benefits{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: linear-gradient(to bottom left , var(--lavande) , var(--blanc) 20% , var(--blanc) 70% , var(--lavande) 100%);
+    padding: 50px 0;
+}
+
+.service-page-benefits-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 40px;
+}
+
+.service-page-benefits-left img,
+.service-page-seance-right img{
+    border-radius: 5px;
+}
+
+.service-page-benefits-right{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.service-page-benefits-right ul{
+    padding: 5px 20px 0 0;
+}
+
+.service-page-benefits-right ul li{
+    margin-top: 15px;
+}
+
+.service-page-seance{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background: linear-gradient(to bottom right , var(--blanc) , var(--blanc) 70% , var(--lavande) 100%);
+    padding: 50px 0;
+}
+
+.service-page-seance-left{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.service-page-seance-left ul{
+    padding: 0 20px 20px 0;
+}
+
+.service-page-seance-left ul li{
+    margin-top: 15px;
+}
+
+.service-page-seance-right{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* FIN PAGES DES SERVICES */ 
 
 @media only screen and (max-width: 1270px){
     .contact-container{
