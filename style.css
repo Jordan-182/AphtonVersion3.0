@@ -646,6 +646,8 @@ textarea{
 
 .page-title{
     margin: 40px auto 30px auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .page-title .slogan{
@@ -680,11 +682,18 @@ textarea{
 
 .service-page-card{
     border: 2px solid var(--lavande);
+    width: 280px;
     border-radius: 5px;
     padding: 0 15px 15px;
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.service-page-card img{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
 }
 
 .caption{
@@ -774,6 +783,7 @@ textarea{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* FIN PAGES DES SERVICES */ 
@@ -858,6 +868,18 @@ textarea{
 @media only screen and (max-width: 900px){
     .contact-left-bottom{
         gap: 50px;
+    }
+
+    .service-page-benefits,
+    .service-page-seance{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .service-page-benefits-left{
+        order: 2;
+        flex-direction: row;
     }
 }
 
@@ -1010,6 +1032,19 @@ textarea{
 @media only screen and (max-width: 760px){
     .avis-list{
         width: 600px;
+    }
+
+    .service-page-intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-page-card{
+        margin: 0 auto;
+    }
+
+    .service-page-benefits-left{
+        flex-direction: column;
     }
 }
 
