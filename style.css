@@ -661,6 +661,7 @@ textarea{
 .service-page-intro{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background: linear-gradient(to bottom left , var(--blanc) , var(--blanc) 75% , var(--lavande) 100%);
 }
 
 .service-page-intro-left{
