@@ -94,9 +94,9 @@ nav{
     content: '';
     display: block;
     position: absolute;
-    bottom: -3px;
+    bottom: -5px;
     width: 100%;
-    height: 1px;
+    height: 2px;
     transform: scaleX(0);
     transform-origin: left;
     background: var(--lavande);
@@ -118,7 +118,7 @@ nav{
 .container{
     width: 100%;
     position: relative;
-    top: 85px;
+    top: 70px;
 }
 
 /* FIN DE LA STRUCTURE */
@@ -201,6 +201,7 @@ nav{
     font-size: 3.5rem;
     font-family: var(--secondary-font);
     text-align: center;
+    margin-top: -15px;
     margin-bottom: 50px;
     position: relative;
 }
@@ -216,7 +217,7 @@ nav{
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .cta{
@@ -427,7 +428,7 @@ nav{
 }
 
 .contact-left{
-    padding: 60px 30px;
+    padding: 60px 30px 60px 50px;
     width: 50%;
     background: linear-gradient(to top left, var(--lavande) , var(--blanc));
     color: var(--bleu-ardoise);
@@ -451,9 +452,14 @@ nav{
     font-weight: bold;
 }
 
+.social{
+    text-align: center;
+}
+
 .social-liens{
     display: flex;
     margin-bottom: 25px;
+    justify-content: center;
 }
 
 .social-liens a{
@@ -485,17 +491,21 @@ nav{
     background: linear-gradient(to bottom left, var(--blanc) , var(--lavande));
     width: 50%;
     color: var(--bleu-ardoise);
-    padding: 60px 30px;
+    padding: 60px 50px 60px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .contact-form{
     width: calc(100% - 60px);
-    margin: 0 auto;
+    margin: 0 0 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+.contact-right .subtitle-dark{
+    margin-left: 60px;
 }
 
 .contact-input{
@@ -527,7 +537,7 @@ textarea{
     width: 100px;
     border-radius: 5px;
     border: 1px solid var(--bleu-ardoise);
-    margin: 10px auto 0;
+    margin: 20px auto 0;
     cursor: pointer;
     font-weight: bold;
     background: var(--blanc);
@@ -554,7 +564,7 @@ textarea{
 }
 
 .index-footer{
-    margin-top: 85px;
+    margin-top: 70px;
     width: 100%;
     background: #ffffff;
     color: var(--bleu-ardoise);
@@ -665,7 +675,7 @@ textarea{
 }
 
 .service-page-intro-left{
-    padding: 0 80px 40px;
+    padding: 0 120px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -823,6 +833,7 @@ textarea{
     .contact-left{
         width: calc(100% - 60px);
         padding-top: 0;
+        padding: 0 30px 60px 30px;
     }
 
     .contact-left-bottom{
@@ -834,10 +845,36 @@ textarea{
         width: calc(100% - 60px);
         background: linear-gradient(to top right, var(--blanc) , var(--lavande));
         order: -1;
+        padding: 60px 30px;
+    }
+
+    .contact-right .subtitle-dark{
+        margin-left: 0;
+    }
+
+    .contact-right .subtitle-dark,
+    .contact-left .subtitle-dark{
+        text-align: center;
+    }
+
+    .contact-left .text-dark{
+        text-align: center;
+    }
+
+    .contact-form{
+        margin: 0 auto;
+    }
+
+    .contact-input{
+        width: calc(100% - 30px);
     }
 
     .about-photos{
         gap: 15px;
+    }
+
+    .service-page-intro-left{
+        padding: 0 80px;
     }
 }
 
@@ -867,6 +904,14 @@ textarea{
 
     .avis-card{
         margin-top: -20px;
+    }
+
+    .service-page-intro-left{
+        padding: 0 40px 40px 80px;
+    }
+
+    .service-page-intro-right{
+        padding: 0 40px 80px;
     }
 }
 
@@ -1032,6 +1077,18 @@ textarea{
     .about-photos img:last-child{
         transform: none;
     }
+
+    .service-page-intro-left{
+        padding: 0 40px 50px;
+    }
+
+    .service-page-intro-right{
+        padding-bottom: 50px;
+    }
+
+    .service-page-card{
+        background: var(--blanc);
+    }
 }
 
 @media only screen and (max-width: 760px){
@@ -1065,9 +1122,7 @@ textarea{
     }
 
     .contact-left-bottom{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-wrap: wrap;
         gap: 15px;
     }
 
