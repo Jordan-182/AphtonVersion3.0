@@ -439,6 +439,12 @@ nav{
     justify-content: space-between;
 }
 
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .contact-list a{
     color: inherit;
 }
