@@ -212,18 +212,23 @@
             </div>
             <div class="contact-right">
                 <h2 class="subtitle-dark">Contactez moi!</h2>
-                <form action="index.html" method="post" class="contact-form">        
-                        <label for="FirstName" class="form-label">Prénom <i class="fa-regular fa-address-card"></i></label>
-                        <input class="contact-input" autocomplete="given-name" name="First Name" id="FirstName" type="text" placeholder="Votre prénom" required><br>
-                        <label for="LastName" class="form-label">Nom <i class="fa-regular fa-address-card"></i></label>
-                        <input class="contact-input" autocomplete="family-name" name="Last Name" id="LastName" type="text" placeholder="Votre nom" required><br>
-                        <label for="E-mail" class="form-label">E-mail <i class="fa-solid fa-envelope"></i></label>
-                        <input class="contact-input" autocomplete="email" name="E-mail" id="E-mail" type="text" placeholder="Votre adresse e-mail" required><br>
-                        <label for="phone" class="form-label">Téléphone <i class="fa-solid fa-phone"></i></label>
-                        <input class="contact-input" autocomplete="tel" name="phone" id="phone" placeholder="Votre téléphone (facultatif)"> <br>
-                        <label for="E-mail" class="form-label">Message <i class="fa-solid fa-inbox"></i></label>
-                        <textarea class="contact-input" name="Message" autocomplete="off" placeholder="Votre message..." required></textarea>
-                        <input type="submit" class="form-btn">
+                <form action="contact.php" method="post" class="contact-form">        
+                    <label for="FirstName" class="form-label">Prénom <i class="fa-regular fa-address-card"></i></label>
+                    <input class="contact-input" autocomplete="given-name" name="FirstName" id="FirstName" type="text" placeholder="Votre prénom" required><br>
+                
+                    <label for="LastName" class="form-label">Nom <i class="fa-regular fa-address-card"></i></label>
+                    <input class="contact-input" autocomplete="family-name" name="LastName" id="LastName" type="text" placeholder="Votre nom" required><br>
+                
+                    <label for="E-mail" class="form-label">E-mail <i class="fa-solid fa-envelope"></i></label>
+                    <input class="contact-input" autocomplete="email" name="E-mail" id="E-mail" type="email" placeholder="Votre adresse e-mail" required><br>
+                
+                    <label for="phone" class="form-label">Téléphone <i class="fa-solid fa-phone"></i></label>
+                    <input class="contact-input" autocomplete="tel" name="phone" id="phone" placeholder="Votre téléphone (facultatif)"><br>
+                
+                    <label for="Message" class="form-label">Message <i class="fa-solid fa-inbox"></i></label>
+                    <textarea class="contact-input" name="Message" autocomplete="off" placeholder="Votre message..." required></textarea><br>
+                
+                    <input type="submit" class="form-btn">
                 </form>
             </div>
         </section>
