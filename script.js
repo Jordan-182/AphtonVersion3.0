@@ -21,3 +21,20 @@ new ResizeObserver(entries =>{
 }).observe(document.body)
 
 // ------------------------------- //
+
+document.querySelector('.nav-contact').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1); // Récupère l'ID cible
+    const targetSection = document.getElementById(targetId); // Récupère la section cible
+
+    window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth'
+    });
+
+    if(navLinksContainer.classList.contains('open')){
+        navLinksContainer.classList.remove('open');
+        hamburgerToggler.classList.toggle("open");
+    };
+});
