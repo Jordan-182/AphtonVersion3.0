@@ -1,35 +1,48 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Fonction pour nettoyer les données utilisateur
-    function clean_input($data) {
-        return htmlspecialchars(stripslashes(trim($data)));
-    }
+header('Cache-Control: no-cache, must-revalidate');
+header('Expires: Mon, 01 Jan 1990 00:00:00 GMT');
 
-    // Récupération et nettoyage des données
-    $firstName = clean_input($_POST['FirstName']);
-    $lastName = clean_input($_POST['LastName']);
-    $email = clean_input($_POST['E-mail']);
-    $phone = clean_input($_POST['phone']);
-    $message = clean_input($_POST['Message']);
+// Clé secrète reCAPTCHA
+$recaptchaSecret = 'CLE CAPTCHA SERVEUR A MODIFIER';
 
-    // Validation des champs requis
-    if (empty($firstName) || empty($lastName) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($message)) {
-        die("Erreur : Tous les champs requis doivent être correctement remplis.");
-    }
+// Vérifie si les données reCAPTCHA existent
+if (isset($_POST['g-recaptcha-response'])) {
+    $recaptchaResponse = $_POST['g-recaptcha-response'];
 
-    // Adresse email sécurisée (non visible côté client)
-    $to = "aphton@hotmail.fr";  // Remplace par ton adresse email
-    $subject = "Nouveau message de $firstName $lastName";
-    $body = "Prénom : $firstName\nNom : $lastName\nEmail : $email\nTéléphone : $phone\n\nMessage :\n$message";
-    $headers = "From: contact@harmonieinterieure.fr";
+    // Appel à l'API de Google pour vérifier la réponse reCAPTCHA v3
+    $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$recaptchaSecret}&response={$recaptchaResponse}");
+    $responseData = json_decode($verify);
 
-    // Envoi de l'email
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Message envoyé avec succès.";
+    if ($responseData->success && $responseData->score >= 0.5) {
+        // Récupération des données du formulaire
+        $firstName = isset($_POST['firstName']) ? htmlspecialchars(trim($_POST['firstName'])) : '';
+        $lastName = isset($_POST['lastName']) ? htmlspecialchars(trim($_POST['lastName'])) : '';
+        $email = isset($_POST['email']) ? htmlspecialchars(trim($_POST['email'])) : '';
+        $message = isset($_POST['message']) ? htmlspecialchars(trim($_POST['message'])) : '';
+
+        // Test d'affichage des données récupérées (temporaire)
+        file_put_contents('test.log', "Nom: $name, Email: $email, Message: $message\n", FILE_APPEND);
+
+        // Vérifie si les données du formulaire sont présentes
+        if (!empty($firstName) && !empty($lastName) && !empty($email) && !empty($message)) {
+            $to = "ADRESSE MAIL QUI RECEVRA LE MAIL";
+            $subject = "Nouveau message de $firstName $lastName";
+            $body = "Nom: $name\nEmail: $email\n\nMessage:\n$message";
+            $headers = "From: $email";
+
+            // Envoi de l'email
+            if (mail($to, $subject, $body, $headers)) {
+                echo json_encode(['success' => true]);
+            } else {
+                echo json_encode(['success' => false, 'error' => 'Erreur d\'envoi du mail.']);
+            }
+        } else {
+            echo json_encode(['success' => false, 'error' => 'Données du formulaire manquantes.']);
+        }
     } else {
-        echo "Erreur lors de l'envoi du message.";
+        echo json_encode(['success' => false, 'error' => 'Vérification reCAPTCHA échouée ou score insuffisant.']);
     }
 } else {
-    echo "Méthode de requête non autorisée.";
+    echo json_encode(['success' => false, 'error' => 'Aucune vérification reCAPTCHA effectuée.']);
 }
 ?>

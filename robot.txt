@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://URL-SITE-A-MODIFIER/sitemap.xml

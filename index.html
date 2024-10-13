@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="script.js"></script>
     <script type="module" src="carousel.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=CLE-CAPTCHA-CLIENT-A-MODIFIER"></script>
     <title>Aphton Minne | Sophrologie, Hypnose et Reiki à Tourcoing</title>
 </head>
 <body>
@@ -82,7 +83,7 @@
             <h2 class="title-dark">Prestations</h2>
             <div class="services-list">
                 <div class="service-card">
-                    <img src="src/img/sophrologie.webp" alt="illustration" height="250" width="250">
+                    <img src="src/img/sophro.webp" alt="illustration" height="250" width="250">
                     <h3 class="subtitle">La sophrologie</h3>
                     <p class="text-dark">La sophrologie est une méthode douce et accessible à tous qui combine des techniques de respiration, de relaxation et de visualisation positive. Elle vous aide à mieux gérer le stress, à développer une plus grande conscience de vous-même et à renforcer votre équilibre émotionnel. <br><br>Que ce soit pour améliorer la qualité de votre sommeil, mieux vivre avec des douleurs chroniques ou simplement retrouver plus de sérénité au quotidien, la sophrologie offre des outils concrets et efficaces pour renforcer votre bien-être physique et mental.</p>
                     <a href="sophrologie.html" class="btn" aria-label="Découvrir la sophrologie">Découvrir la sophrologie</a>
@@ -212,23 +213,24 @@
             </div>
             <div class="contact-right">
                 <h2 class="subtitle-dark">Contactez moi!</h2>
-                <form action="contact.php" method="post" class="contact-form">        
+                <form method="post" class="contact-form" id="contactForm">        
                     <label for="FirstName" class="form-label">Prénom <i class="fa-regular fa-address-card"></i></label>
-                    <input class="contact-input" autocomplete="given-name" name="FirstName" id="FirstName" type="text" placeholder="Votre prénom" required><br>
+                    <input class="contact-input" autocomplete="given-name" name="firstName" id="FirstName" type="text" placeholder="Votre prénom" required><br>
                 
                     <label for="LastName" class="form-label">Nom <i class="fa-regular fa-address-card"></i></label>
-                    <input class="contact-input" autocomplete="family-name" name="LastName" id="LastName" type="text" placeholder="Votre nom" required><br>
+                    <input class="contact-input" autocomplete="family-name" name="lastName" id="LastName" type="text" placeholder="Votre nom" required><br>
                 
                     <label for="E-mail" class="form-label">E-mail <i class="fa-solid fa-envelope"></i></label>
-                    <input class="contact-input" autocomplete="email" name="E-mail" id="E-mail" type="email" placeholder="Votre adresse e-mail" required><br>
+                    <input class="contact-input" autocomplete="email" name="email" id="E-mail" type="email" placeholder="Votre adresse e-mail" required><br>
                 
                     <label for="phone" class="form-label">Téléphone <i class="fa-solid fa-phone"></i></label>
                     <input class="contact-input" autocomplete="tel" name="phone" id="phone" placeholder="Votre téléphone (facultatif)"><br>
                 
                     <label for="Message" class="form-label">Message <i class="fa-solid fa-inbox"></i></label>
-                    <textarea class="contact-input" name="Message" autocomplete="off" placeholder="Votre message..." required></textarea><br>
+                    <textarea class="contact-input" name="message" autocomplete="off" placeholder="Votre message..." required></textarea><br>
                 
                     <input type="submit" class="form-btn">
+                    <div id="formMessage"></div>
                 </form>
             </div>
         </section>
@@ -239,5 +241,6 @@
             <p class="article-text"><a href="legal.html">Mentions légales</a></p>
         </div>
     </footer>
+    <script src="form.js"></script>
 </body>
 </html>

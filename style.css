@@ -556,6 +556,13 @@ textarea{
     background: var(--bleu-ardoise);
 }
 
+#formMessage{
+    color: var(--text-color);
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+}
+
 /* FIN DU BANDEAU CONTACT */
 
 /* CETTE PARTIE CONCERNE LE FOOTER */
@@ -808,6 +815,31 @@ textarea{
 }
 
 /* FIN PAGES DES SERVICES */ 
+
+/* PAGE MENTIONS LEGALES */
+
+.legal--page{
+    background: linear-gradient(to bottom right , var(--blanc) , var(--blanc) 70% , var(--lavande) 100%);
+    margin-top: 70px;
+    padding: 50px 50% 50px 50px;
+}
+
+.legal--title{
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.legal--subtitle{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.legal--text{margin-bottom: 15px;}
+
+/* FIN PAGE MENTIONS LEGALES*/
 
 .contact-page-container{
     margin-top: 70px;
