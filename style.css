@@ -182,6 +182,10 @@ nav{
     color: var(--bleu-ardoise);
 }
 
+.mb-10{
+    margin-bottom: 10px;
+}
+
 /* CETTE PARTIE CONCERNE LE CONTENU DE LA HERO SECTION */
 
 .hero-section{
@@ -404,7 +408,7 @@ nav{
 
 .service-card{
     width: 370px;
-    height: 620px;
+    height: 640px;
     border: 2px solid var(--bleu-ardoise);
     background-color: var(--blanc);
     padding: 10px 20px 20px;
@@ -414,7 +418,7 @@ nav{
 }
 
 .service-card img{
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
 }
 
 /* FIN DU BANDEAU SERVICES */
@@ -780,6 +784,14 @@ textarea{
 }
 
 .service-page-benefits-right ul li{
+    margin-top: 15px;
+}
+
+.service-page-intro-left ul{
+    padding: 5px 20px 0 0;
+}
+
+.service-page-intro-left ul li{
     margin-top: 15px;
 }
 
