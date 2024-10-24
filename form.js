@@ -3,7 +3,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   
     // Requête reCAPTCHA v3
     grecaptcha.ready(function() {
-      grecaptcha.execute('CLE CAPTCHA CLIENT A CHANGER', {action: 'submit'}).then(function(token) {
+      grecaptcha.execute('6LeSEmsqAAAAAKITt9b9QvSsvhkd69nI9JnTjsJ3', {action: 'submit'}).then(function(token) {
         // Ajoute le token reCAPTCHA au formulaire
         const formData = new FormData(document.getElementById('contactForm'));
         formData.append('g-recaptcha-response', token);

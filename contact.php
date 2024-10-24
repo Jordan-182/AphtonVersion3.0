@@ -3,7 +3,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 01 Jan 1990 00:00:00 GMT');
 
 // Clé secrète reCAPTCHA
-$recaptchaSecret = 'CLE CAPTCHA SERVEUR A MODIFIER';
+$recaptchaSecret = '6LeSEmsqAAAAAPv2CD2nIKX8Gtqt7h0an8x4GyMv';
 
 // Vérifie si les données reCAPTCHA existent
 if (isset($_POST['g-recaptcha-response'])) {
@@ -25,7 +25,7 @@ if (isset($_POST['g-recaptcha-response'])) {
 
         // Vérifie si les données du formulaire sont présentes
         if (!empty($firstName) && !empty($lastName) && !empty($email) && !empty($message)) {
-            $to = "ADRESSE MAIL QUI RECEVRA LE MAIL";
+            $to = "aphton@hotmail.fr";
             $subject = "Nouveau message de $firstName $lastName";
             $body = "Nom: $name\nEmail: $email\n\nMessage:\n$message";
             $headers = "From: $email";
