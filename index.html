@@ -1,260 +1,588 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aphton Minne vous propose des séances de Sophrologie, d'Hypnose et de Reiki à Tourcoing et dans la métropole Lilloise">
-    <meta name="keywords" content="sophrologie, hypnose, reiki, tourcoing, bien-être, santé mentale">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Aphton Minne | Sophrologie, Hypnose et Reiki à Tourcoing">
-    <meta property="og:description" content="Aphton Minne vous propose des séances de Sophrologie, d'Hypnose et de Reiki à Tourcoing et dans la métropole Lilloise">
-    <meta property="og:image" content="URL de l'image à afficher A MODIFIER">
-    <meta property="og:url" content="URL de la page A MODIFIER">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Aphton Minne | Sophrologie, Hypnose et Reiki à Tourcoing">
-    <meta name="twitter:description" content="Aphton Minne vous propose des séances de Sophrologie, d'Hypnose et de Reiki à Tourcoing et dans la métropole Lilloise">
-    <meta name="twitter:image" content="URL de l'image pour Twitter A MODIFIER">
-    <meta name="google-site-verification" content="code-de-vérification A MODIFIER">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#4b5d67">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#4b5d67">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aphton Minne vous propose des séances de Sophrologie, d'Hypnose et de Reiki à Tourcoing et dans la métropole Lilloise"
+    />
+    <meta
+      name="keywords"
+      content="sophrologie, hypnose, reiki, tourcoing, bien-être, santé mentale"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Aphton Minne | Sophrologie, Hypnose et Reiki à Tourcoing et dans la métropole Lilloise"
+    />
+    <meta
+      property="og:description"
+      content="Aphton Minne vous propose des séances de Sophrologie, d'Hypnose et de Reiki à Tourcoing et dans la métropole Lilloise"
+    />
+    <meta
+      property="og:image"
+      content="https://aphtonminne.fr/src/img/logoAphton.webp"
+    />
+    <meta property="og:url" content="https://aphtonminne.fr" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Aphton Minne | Sophrologie, Hypnose et Reiki à Tourcoing et dans la métropole Lilloise"
+    />
+    <meta
+      name="twitter:description"
+      content="Aphton Minne vous propose des séances de Sophrologie, d'Hypnose et de Reiki à Tourcoing et dans la métropole Lilloise"
+    />
+    <meta
+      name="twitter:image"
+      content="https://aphtonminne.fr/src/img/logoAphton.webp"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#4b5d67"
+    />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#4b5d67" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js"></script>
     <script type="module" src="carousel.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6LeSEmsqAAAAAKITt9b9QvSsvhkd69nI9JnTjsJ3"></script>
-    <title>Aphton Minne | Sophrologie, Hypnose et Reiki à Tourcoing</title>
-</head>
-<body>
+    <title>
+      Aphton Minne | Sophrologie, Hypnose et Reiki à Tourcoing et dans la
+      métropole Lilloise
+    </title>
+  </head>
+  <body>
     <header>
-        <nav>
-             <a href="index.html" class="nav-icon" aria-label="visit homepage" aria-current="page"><img src="src/img/papillon-logo.webp" alt="logo Aphton Minne" height="50" width="83"></a>
-             <div class="text-logo">
-                <span>Aphton MINNE</span>
-                <span>Harmonie Intérieure</span>
-             </div>
-             <div class="main-navlinks">
-                 <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                 </button>
-                 <div class="navlinks-container">
-                     <a href="index.html" aria-current="page">Accueil</a>
-                     <a href="about.html">A propos</a>
-                     <a href="sophrologie.html">Sophrologie</a>
-                     <a href="hypnose.html">Hypnose</a>
-                     <a href="reiki.html">Reiki</a>
-                     <a href="#contact-anchor" class="nav-contact">Contact</a>
-                     <img src="src/img/LogoAphtonCarre.png" alt="Logo Aphton Minne" class="mobile-nav-logo">
-                </div>
-             </div>
-       </nav>
-      </header>
+      <nav>
+        <a
+          href="index.html"
+          class="nav-icon"
+          aria-label="visit homepage"
+          aria-current="page"
+          ><img
+            src="src/img/papillon-logo.webp"
+            alt="logo Aphton Minne"
+            height="50"
+            width="83"
+        /></a>
+        <div class="text-logo">
+          <span>Aphton MINNE</span>
+          <span>Harmonie Intérieure</span>
+        </div>
+        <div class="main-navlinks">
+          <button
+            class="hamburger"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navlinks-container">
+            <a href="index.html" aria-current="page">Accueil</a>
+            <a href="about.html">A propos</a>
+            <a href="sophrologie.html">Sophrologie</a>
+            <a href="hypnose.html">Hypnose</a>
+            <a href="reiki.html">Reiki</a>
+            <a href="#contact-anchor" class="nav-contact">Contact</a>
+            <img
+              src="src/img/LogoAphtonCarre.png"
+              alt="Logo Aphton Minne"
+              class="mobile-nav-logo"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
     <main class="container">
-        <section class="hero-section">
-            <div class="hero-left">
-                <h1 class="slogan">Métamorphosez l'ombre en lumière</h1>
-                <p>
-                    Découvrez le bien-être avec <span class="bold">Aphton Minne</span>, sophrologue et hypnopraticienne à Tourcoing. <br><br>Forte de mon expérience personnelle, 
-                    je vous accompagne avec passion et bienveillance pour surmonter les défis du quotidien, améliorer votre confiance en vous, et mieux gérer 
-                    vos émotions. <br><br>Formée à l’Institut Psynapse et à l’Institut Catherine Aliotta, je vous propose des séances personnalisées de sophrologie, reiki, et 
-                    hypnose, adaptées à vos besoins uniques. <br><br>Prenez rendez-vous dès aujourd'hui et entamez votre chemin vers un mieux-être durable.
-                </p>
-                <div class="cta-container">
-                    <a href="about.html" class="cta-reverse" aria-label="A propos d'Aphton Minne">A propos</a>
-                    <a href="https://www.resalib.fr/praticien/82250-ei-aphton-minne-hypno-lyfe-sophrologue-tourcoing" class="cta" aria-label="Prendre rendez-vous">Prendre rendez-vous</a>
+      <section class="hero-section">
+        <div class="hero-left">
+          <h1 class="slogan">Métamorphosez l'ombre en lumière</h1>
+          <p>
+            Vous aimeriez avoir la possibilité de transformer l'obscurité en
+            clarté ? De changer ce qui ne vous convient plus ? <br /><br />
+            Et si je vous disais que vous aviez cette capacité naturelle en
+            vous, que vous avez les ressources nécessaires pour sortir de cette
+            pénombre. <br /><br />Qu'avec des méthodes naturelles, vous pouvez
+            faire ressortir le meilleur de vous-même. <br /><br />
+            La vie a fait que vous avez oublié que vous aviez toutes ces
+            ressources, toutes ces belles choses à l'intérieur de vous qui ne
+            demandent qu'à émerger. <br /><br />Alors laissez-moi vous
+            accompagner pour que vous puissiez enfin retrouver un quotidien
+            rayonnant et harmonieux. <br /><br />
+            Vous n'avez rien à perdre, tout à y gagner. Au pire, ça marche !
+          </p>
+          <div class="cta-container">
+            <a
+              href="about.html"
+              class="cta-reverse"
+              aria-label="A propos d'Aphton Minne"
+              >A propos</a
+            >
+            <a
+              href="https://www.resalib.fr/praticien/82250-ei-aphton-minne-hypno-lyfe-sophrologue-tourcoing"
+              class="cta"
+              aria-label="Prendre rendez-vous"
+              >Prendre rendez-vous</a
+            >
+          </div>
+        </div>
+        <div class="hero-right">
+          <img
+            src="src/img/index.webp"
+            alt="illustration hero section"
+            height="550"
+            width="550"
+          />
+        </div>
+      </section>
+      <section class="services">
+        <h2 class="title-dark">Prestations</h2>
+        <div class="services-list">
+          <div class="service-card">
+            <img
+              src="src/img/sophro.webp"
+              alt="illustration"
+              height="250"
+              width="250"
+            />
+            <h3 class="subtitle">La sophrologie</h3>
+            <p class="text-dark">
+              La sophrologie est une méthode douce et accessible qui combine des
+              techniques telles que l'écoute du corps, la respiration contrôlée,
+              la relaxation et la visualisation positive pour harmoniser le
+              corps et l'esprit. <br />
+              Les exercices, simples et accessibles, permettent de trouver
+              rapidement un équilibre émotionnel, activer les ressources
+              intérieures, et améliorer la qualité de vie peu importe votre âge
+              ou condition physique. <br />
+              La sophrologie vous aide à mieux vous connaître, à prendre soin de
+              vous et à vivre une vie plus épanouie et équilibrée. <br />
+              Plus qu'une simple technique de relaxation, elle devient un
+              véritable art de vivre qui vous accompagne dans votre quête de
+              bien-être, vous offrant les clés pour changer votre regard sur
+              vous-même et sur le monde.
+            </p>
+            <a
+              href="sophrologie.html"
+              class="btn"
+              aria-label="Découvrir la sophrologie"
+              >Découvrir la sophrologie</a
+            >
+          </div>
+          <div class="service-card">
+            <img
+              src="src/img/hypnose.webp"
+              alt="illustration"
+              height="250"
+              width="250"
+            />
+            <h3 class="subtitle">L'hypnose</h3>
+            <p class="text-dark">
+              L'hypnose Ericksonienne est une approche douce et personnalisée de
+              l'hypnose, qui respecte l'individu et son inconscient. <br />
+              Inspirée des travaux du Docteur MILTON ERICKSON, cette méthode
+              part du principe que chacun possède en lui les ressources
+              nécessaires pour surmonter ses difficultés. <br />
+              Plutôt que d'imposer des solutions, elle vous guide vers un état
+              de relaxation profonde, permettant à votre inconscient d'explorer
+              et d'activer ses propres capacités de changement. <br />
+              Chaque séance est une opportunité de voyage intérieur où vous
+              découvrirez de nouvelles perspectives afin d'amorcer les
+              transformations nécessaires à votre bien-être, tout en gardant le
+              contrôle de votre expérience. <br />
+              C'est un outil puissant et naturel pour réactiver votre potentiel
+              et vivre plus sereinement.
+            </p>
+            <a href="hypnose.html" class="btn" aria-label="Décrouvrir l'hypnose"
+              >Découvrir l'hypnose</a
+            >
+          </div>
+          <div class="service-card">
+            <img
+              src="src/img/reiki.webp"
+              alt="illustration"
+              height="250"
+              width="250"
+            />
+            <h3 class="subtitle">Le reiki</h3>
+            <p class="text-cark">
+              Le reiki Usui, fondé par le maître japonais Mikao Usui au début du
+              XXe siècle, est une méthode de soin énergétique douce et
+              naturelle. <br />
+              Cette pratique repose sur le transfert d'énergie universelle à
+              travers les mains du praticien, favorisant ainsi l'harmonisation
+              du corps et de l'esprit du client, en équilibrant ses énergies.
+              <br /><br />
+              Il peut être utilisé pour améliorer le bien-être général,
+              renforcer l'équilibre émotionnel et spirituel, ou pour accompagner
+              lors d'un traitement médical. <br />
+              Accessible à tous, le reiki agit en profondeur sur l'énergie
+              vitale, favorisant ainsi une meilleure qualité de vie. <br />
+              C'est une pratique énergétique aux nombreux bienfaits, souvent
+              perçu comme une méthode complémentaire à la médecine
+              conventionnelle.
+            </p>
+            <a href="reiki.html" class="btn" aria-label="Découvrir le reiki"
+              >Découvrir le reiki</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="avis">
+        <h2 class="title-dark">Avis clients</h2>
+        <div class="avis-list">
+          <div class="carousel">
+            <div class="slider">
+              <section>
+                <div class="avis-card">
+                  <p class="avis-name">Elizabeth</p>
+                  <div class="avis-note">
+                    <i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i>
+                  </div>
+                  <p class="avis-text">
+                    Je recommande, très à l’écoute et très professionnelle.
+                    <br />
+                    <br />Ce fut une expérience très enrichissante et efficace.
+                    <br /><br />A faire et à refaire si nécessaire 🫶🌸
+                  </p>
+                  <p class="avis-date">Juillet 2024</p>
                 </div>
-            </div>
-            <div class="hero-right">
-                <img src="src/img/index.webp" alt="illustration hero section" height="550" width="550">
-            </div>
-        </section>
-        <section class="services">
-            <h2 class="title-dark">Prestations</h2>
-            <div class="services-list">
-                <div class="service-card">
-                    <img src="src/img/sophro.webp" alt="illustration" height="250" width="250">
-                    <h3 class="subtitle">La sophrologie</h3>
-                    <p class="text-dark">La sophrologie est une méthode douce et accessible qui combine des techniques telles que l'écoute du corps, 
-                        la respiration contrôlée, la relaxation et la visualisation positive pour harmoniser le corps et l'esprit. <br>
-                        Les exercices, simples et accessibles, permettent de trouver rapidement un équilibre émotionnel, activer les ressources intérieures, 
-                        et améliorer la qualité de vie peu importe votre âge ou condition physique. <br>
-                        La sophrologie vous aide à mieux vous connaître, à prendre soin de vous et à vivre une vie plus épanouie et équilibrée. <br>
-                        Plus qu'une simple technique de relaxation, elle devient un véritable art de vivre qui vous accompagne dans votre quête de bien-être, 
-                        vous offrant les clés pour changer votre regard sur vous-même et sur le monde.</p>
-                    <a href="sophrologie.html" class="btn" aria-label="Découvrir la sophrologie">Découvrir la sophrologie</a>
+              </section>
+              <section>
+                <div class="avis-card">
+                  <p class="avis-name">Cassandre</p>
+                  <div class="avis-note">
+                    <i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i>
+                  </div>
+                  <p class="avis-text">
+                    Aphton a su créer et faire perdurer un climat de grande
+                    douceur, d'écoute et de confiance tout au long de la séance
+                    en m'offrant un champs de travail large, doux et sécurisant.
+                    <br /><br />La pratique a été fluide , avec peu de
+                    résistance et avec beaucoup de clarté dans mon voyage
+                    intérieur. <br /><br />
+                    Apres plusieurs semaines de travail, je ressens encore que
+                    le travail énergétique est actif . Cela me permet de mesurer
+                    concrètement l'impact de la séance mais aussi l'ampleur de
+                    la libération. <br /><br />
+                    Si vous recherchez un professionnel qui suivra votre rythme
+                    intérieur ( et non votre rythme du mental ) et pour qui
+                    l'engagement est complet , alors Aphton est faite pour vous.
+                    <br /><br />
+                    Un grand merci pour ce beau travail ensemble et une belle
+                    réussite à toi.
+                  </p>
+                  <p class="avis-date">Janvier 2024</p>
                 </div>
-                <div class="service-card">
-                    <img src="src/img/hypnose.webp" alt="illustration" height="250" width="250">
-                    <h3 class="subtitle">L'hypnose</h3>
-                    <p class="text-dark">L'hypnose Ericksonienne est une approche douce et personnalisée de l'hypnose, qui respecte l'individu et son inconscient. <br>
-                        Inspirée des travaux du Docteur MILTON ERICKSON, cette méthode part du principe que chacun possède en lui les ressources nécessaires pour surmonter ses difficultés. <br>
-                        Plutôt que d'imposer des solutions, elle vous guide vers un état de relaxation profonde, permettant à votre inconscient d'explorer et d'activer ses propres capacités de changement. <br>
-                        Chaque séance est une opportunité de voyage intérieur où vous découvrirez de nouvelles perspectives afin d'amorcer les transformations nécessaires à votre bien-être, tout en gardant le contrôle de votre expérience. <br>
-                        C'est un outil puissant et naturel pour réactiver votre potentiel et vivre plus sereinement.</p>
-                    <a href="hypnose.html" class="btn" aria-label="Décrouvrir l'hypnose">Découvrir l'hypnose</a>
+              </section>
+              <section>
+                <div class="avis-card">
+                  <p class="avis-name">Dominique</p>
+                  <div class="avis-note">
+                    <i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i>
+                  </div>
+                  <p class="avis-text">
+                    Je recommande vivement ! <br /><br />Aphton est une
+                    praticienne très attentive, à l'écoute de son patient.
+                    <br /><br />
+                    Elle a su adapter chaque séance a mon ressenti, mes
+                    inconforts. <br /><br />
+                    Je l'ai contactée pour des problèmes récurrents d'insomnie.
+                    Je dors beaucoup mieux maintenant ! Quel soulagement !
+                  </p>
+                  <p class="avis-date">Janvier 2024</p>
                 </div>
-                <div class="service-card"> 
-                    <img src="src/img/reiki.webp" alt="illustration" height="250" width="250">
-                    <h3 class="subtitle">Le reiki</h3>
-                    <p class="text-cark">Le reiki Usui, fondé par le maître japonais Mikao Usui au début du XXe siècle, est une méthode de soin énergétique douce et naturelle. <br>
-                        Cette pratique repose sur le transfert d'énergie universelle à travers les mains du praticien, favorisant ainsi l'harmonisation du corps et de l'esprit du client, en équilibrant ses énergies. <br><br>
-                        Il peut être utilisé pour améliorer le bien-être général, renforcer l'équilibre émotionnel et spirituel, ou pour accompagner lors d'un traitement médical. <br>
-                        Accessible à tous, le reiki agit en profondeur sur l'énergie vitale, favorisant ainsi une meilleure qualité de vie. <br>
-                        C'est une pratique énergétique aux nombreux bienfaits, souvent perçu comme une méthode complémentaire à la médecine conventionnelle.</p>
-                    <a href="reiki.html" class="btn" aria-label="Découvrir le reiki">Découvrir le reiki</a>
+              </section>
+              <section>
+                <div class="avis-card">
+                  <p class="avis-name">Betty</p>
+                  <div class="avis-note">
+                    <i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i>
+                  </div>
+                  <p class="avis-text">
+                    Magnifiques moments, j'étais sceptique mais curieuse.
+                    <br /><br />
+                    Apthon a su me rassurer en m'expliquant parfaitement ce qui
+                    allait se passer. <br /><br />
+                    Bluffée par le résultat après la 1ère séance, j'ai réitéré
+                    pour d'autres choses, un succès, je recommande les yeux
+                    fermés 😉😊
+                  </p>
+                  <p class="avis-date">Juin 2023</p>
                 </div>
-            </div>
-        </section>
-        <section class="avis">
-            <h2 class="title-dark">Avis clients</h2>
-            <div class="avis-list">
-                <div class="carousel">
-                    <div class="slider">
-                        <section>
-                            <div class="avis-card">
-                                <p class="avis-name">Elizabeth</p>
-                                <div class="avis-note"><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i></div>
-                                <p class="avis-text">Je recommande, très à l’écoute et très professionnelle. <br> <br>Ce fut une expérience très enrichissante et efficace. <br><br>A faire et à refaire si nécessaire 🫶🌸</p>
-                                <p class="avis-date">Juillet 2024</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="avis-card">
-                                <p class="avis-name">Cassandre</p>
-                                <div class="avis-note"><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i></div>
-                                <p class="avis-text">Aphton a su créer et faire perdurer un climat de grande douceur, d'écoute et de confiance tout au long de la séance en m'offrant un champs de travail large, doux et sécurisant. <br><br>La pratique a été fluide , avec peu de résistance et avec beaucoup de clarté dans mon voyage intérieur. <br><br> Apres plusieurs semaines de travail, je ressens encore que le travail énergétique est actif . Cela me permet de mesurer concrètement l'impact de la séance mais aussi l'ampleur de la libération. <br><br> 
-                                Si vous recherchez un professionnel qui suivra votre rythme intérieur ( et non votre rythme du mental ) et pour qui l'engagement est complet , alors Aphton est faite pour vous. <br><br> Un grand merci pour ce beau travail ensemble et une belle réussite à toi.</p>
-                                <p class="avis-date">Janvier 2024</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="avis-card">
-                                <p class="avis-name">Dominique</p>
-                                <div class="avis-note"><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i></div>
-                                <p class="avis-text">Je recommande vivement ! <br><br>Aphton est une praticienne très attentive, à l'écoute de son patient. <br><br> Elle a su adapter chaque séance a mon ressenti, mes inconforts. <br><br> Je l'ai contactée pour des problèmes récurrents d'insomnie. Je dors beaucoup mieux maintenant ! Quel soulagement !</p>
-                                <p class="avis-date">Janvier 2024</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="avis-card">
-                                <p class="avis-name">Betty</p>
-                                <div class="avis-note"><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i></div>
-                                <p class="avis-text">Magnifiques moments, j'étais sceptique mais curieuse. <br><br> Apthon a su me rassurer en m'expliquant parfaitement ce qui allait se passer. <br><br> Bluffée par le résultat après la 1ère séance, j'ai réitéré pour d'autres choses, un succès, je recommande les yeux fermés 😉😊</p>
-                                <p class="avis-date">Juin 2023</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="avis-card">
-                                <p class="avis-name">Chloé</p>
-                                <div class="avis-note"><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i></div>
-                                <p class="avis-text">Je recommande honnêtement. <br><br>Personne très à l'écoute douce et bienveillante, explique les choses comme il le faut. <br><br> J'ai passé une très bon moment durant cette séance, merci encore à vous et à très bientôt.</p>
-                                <p class="avis-date">Janvier 2023</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="avis-card">
-                                <p class="avis-name">Mohammed</p>
-                                <div class="avis-note"><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i><i class="fa-solid fa-star" style="color: #FFD663;"></i></div>
-                                <p class="avis-text">Personne à l'écoute, je vous la recommande fortement. <br><br> Allez y les yeux fermés, une fois ouvert vous re-découvrez une autre version de vous même. <br><br> Merci Aphton</p>
-                                <p class="avis-date">Octobre 2022</p>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="controls">
-                        <span class="arrow left"><i class="fa-solid fa-arrow-left" style="color: #4b5d67;"></i></span>
-                        <span class="arrow right"><i class="fa-solid fa-arrow-right" style="color: #4b5d67;"></i></span>
-                        <ul>
-                            <li class="selected"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
+              </section>
+              <section>
+                <div class="avis-card">
+                  <p class="avis-name">Chloé</p>
+                  <div class="avis-note">
+                    <i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i>
+                  </div>
+                  <p class="avis-text">
+                    Je recommande honnêtement. <br /><br />Personne très à
+                    l'écoute douce et bienveillante, explique les choses comme
+                    il le faut. <br /><br />
+                    J'ai passé une très bon moment durant cette séance, merci
+                    encore à vous et à très bientôt.
+                  </p>
+                  <p class="avis-date">Janvier 2023</p>
                 </div>
-            </div>
-            <div id="contact"></div>
-        </section>
-        <section class="contact" id="contact-anchor">
-            <div class="contact-left">
-                <h2 class="subtitle-dark">Ou me retrouver?</h2>
-                <p class="text-dark">
-                    Je vous propose des séances à domicile, en visio, et à mon cabinet. <br><br>
-                    L'accès au cabinet s'effectue par des escaliers. <br><br> Pour les personnes à mobilité réduite, il est préférable d'opter pour des séances à domicile ou en visio. <br><br>
-                </p>
-                <div class="contact-left-bottom">
-                        <div class="coordonnees">
-                            <h3 class="contact-subtitle">Mes coordonnées:</h3>
-                            <ul class="contact-list">   
-                              <li><i class="fa-solid fa-location-dot"></i> 41 rue Denfert Rochereau, <br>  &nbsp; &nbsp; &nbsp;TOURCOING 59200</li>
-                              <li><i class="fa-solid fa-phone"></i> <a href="tel:+33622281454">06.22.28.14.54</a></li>
-                              <li><i class="fa-solid fa-envelope"></i> <a href="mailto:aphton@hotmail.fr">aphton@hotmail.fr</a></li>
-                            </ul>
-                        </div>
-                        <div class="horaires">
-                            <h3 class="contact-subtitle">Mes horaires:</h3>
-                            <ul>
-                                <li>Lundi : 9h à 19h</li>
-                                <li>Mardi : 9h à 19h</li>
-                                <li>Mercredi : 9h à 19h</li>
-                                <li>Jeudi : 9h à 19h</li>
-                                <li>Vendredi : 9h à 19h</li>
-                                <li>Samedi : 9h à 13h</li>
-                            </ul>
-                        </div> 
-                        <div class="social">
-                            <h3 class="contact-subtitle">Connectons nous!</h3>
-                            <div class="social-liens">
-                                <a href="https://www.facebook.com/AphtonMINNEHarmonieInterieure" target="_blank" aria-label="Voir la page Facebook"><p class="article-text"><i class="fa-brands fa-facebook"></i></p></a>
-                                <a href="https://www.instagram.com/aphtonminne_harmonieinterieure/" target="_blank" aria-label="Voir la page Instagram"><p class="article-text"><i class="fa-brands fa-instagram"></i></p></a>
-                            </div>
-                            <a href="https://www.resalib.fr/praticien/82250-ei-aphton-minne-hypno-lyfe-sophrologue-tourcoing" class="contact-cta" aria-label="Prendre rendez-vous">Prendre rendez-vous</a>
-                        </div>
+              </section>
+              <section>
+                <div class="avis-card">
+                  <p class="avis-name">Mohammed</p>
+                  <div class="avis-note">
+                    <i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i
+                    ><i class="fa-solid fa-star" style="color: #ffd663"></i>
+                  </div>
+                  <p class="avis-text">
+                    Personne à l'écoute, je vous la recommande fortement.
+                    <br /><br />
+                    Allez y les yeux fermés, une fois ouvert vous re-découvrez
+                    une autre version de vous même. <br /><br />
+                    Merci Aphton
+                  </p>
+                  <p class="avis-date">Octobre 2022</p>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.284530032736!2d3.1514200999999993!3d50.696104299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b01e86c55b349f%3A0xa9ee6d0a23ec934b!2sMinne%20Aphton%20Hypno&#39;Lyfe!5e0!3m2!1sfr!2sfr!4v1726147800130!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte"></iframe>
+              </section>
             </div>
-            <div class="contact-right">
-                <h2 class="subtitle-dark">Contactez moi!</h2>
-                <form method="post" class="contact-form" id="contactForm">        
-                    <label for="FirstName" class="form-label">Prénom <i class="fa-regular fa-address-card"></i></label>
-                    <input class="contact-input" autocomplete="given-name" name="firstName" id="FirstName" type="text" placeholder="Votre prénom" required><br>
-                
-                    <label for="LastName" class="form-label">Nom <i class="fa-regular fa-address-card"></i></label>
-                    <input class="contact-input" autocomplete="family-name" name="lastName" id="LastName" type="text" placeholder="Votre nom" required><br>
-                
-                    <label for="E-mail" class="form-label">E-mail <i class="fa-solid fa-envelope"></i></label>
-                    <input class="contact-input" autocomplete="email" name="email" id="E-mail" type="email" placeholder="Votre adresse e-mail" required><br>
-                
-                    <label for="phone" class="form-label">Téléphone <i class="fa-solid fa-phone"></i></label>
-                    <input class="contact-input" autocomplete="tel" name="phone" id="phone" placeholder="Votre téléphone (facultatif)"><br>
-                
-                    <label for="Message" class="form-label">Message <i class="fa-solid fa-inbox"></i></label>
-                    <textarea class="contact-input" name="message" autocomplete="off" placeholder="Votre message..." required></textarea><br>
-                
-                    <input type="submit" class="form-btn">
-                    <div id="formMessage"></div>
-                </form>
+            <div class="controls">
+              <span class="arrow left"
+                ><i class="fa-solid fa-arrow-left" style="color: #4b5d67"></i
+              ></span>
+              <span class="arrow right"
+                ><i class="fa-solid fa-arrow-right" style="color: #4b5d67"></i
+              ></span>
+              <ul>
+                <li class="selected"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+        <div id="contact"></div>
+      </section>
+      <section class="contact" id="contact-anchor">
+        <div class="contact-left">
+          <h2 class="subtitle-dark">Où me retrouver ?</h2>
+          <p class="text-dark">
+            Je vous propose des séances en cabinet, en visio, et à domicile.
+            <br /><br />
+            L'accès au cabinet s'effectue par des escaliers. <br /><br />
+            Pour les personnes à mobilité réduite, il est préférable d'opter
+            pour des séances à domicile ou en visio. <br /><br />
+          </p>
+          <div class="contact-left-bottom">
+            <div class="coordonnees">
+              <h3 class="contact-subtitle">Mes coordonnées:</h3>
+              <ul class="contact-list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> 41 rue Denfert
+                  Rochereau, <br />
+                  &nbsp; &nbsp; &nbsp;TOURCOING 59200
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+33622281454">06.22.28.14.54</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:contact@aphtonminne.fr"
+                    >contact@aphtonminne.fr</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="horaires">
+              <h3 class="contact-subtitle">Mes horaires:</h3>
+              <ul>
+                <li>Lundi : 8h à 20h</li>
+                <li>Mardi : 8h à 20h</li>
+                <li>Mercredi : 8h à 20h</li>
+                <li>Jeudi : 8h à 20h</li>
+                <li>Vendredi : 8h à 20h</li>
+                <li>Samedi : 8h à 13h</li>
+              </ul>
+            </div>
+            <div class="social">
+              <h3 class="contact-subtitle">Connectons nous!</h3>
+              <div class="social-liens">
+                <a
+                  href="https://www.facebook.com/AphtonMINNEHarmonieInterieure"
+                  target="_blank"
+                  aria-label="Voir la page Facebook"
+                  ><p class="article-text">
+                    <i class="fa-brands fa-facebook"></i></p
+                ></a>
+                <a
+                  href="https://www.instagram.com/aphtonminne_harmonieinterieure/"
+                  target="_blank"
+                  aria-label="Voir la page Instagram"
+                  ><p class="article-text">
+                    <i class="fa-brands fa-instagram"></i></p
+                ></a>
+              </div>
+              <a
+                href="https://www.resalib.fr/praticien/82250-ei-aphton-minne-hypno-lyfe-sophrologue-tourcoing"
+                class="contact-cta"
+                aria-label="Prendre rendez-vous"
+                >Prendre rendez-vous</a
+              >
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.284530032736!2d3.1514200999999993!3d50.696104299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b01e86c55b349f%3A0xa9ee6d0a23ec934b!2sMinne%20Aphton%20Hypno&#39;Lyfe!5e0!3m2!1sfr!2sfr!4v1726147800130!5m2!1sfr!2sfr"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Carte"
+          ></iframe>
+        </div>
+        <div class="contact-right">
+          <h2 class="subtitle-dark">Contactez moi!</h2>
+          <form method="post" class="contact-form" id="contactForm">
+            <label for="FirstName" class="form-label"
+              >Prénom <i class="fa-regular fa-address-card"></i
+            ></label>
+            <input
+              class="contact-input"
+              autocomplete="given-name"
+              name="firstName"
+              id="FirstName"
+              type="text"
+              placeholder="Votre prénom"
+              required
+            /><br />
+
+            <label for="LastName" class="form-label"
+              >Nom <i class="fa-regular fa-address-card"></i
+            ></label>
+            <input
+              class="contact-input"
+              autocomplete="family-name"
+              name="lastName"
+              id="LastName"
+              type="text"
+              placeholder="Votre nom"
+              required
+            /><br />
+
+            <label for="E-mail" class="form-label"
+              >E-mail <i class="fa-solid fa-envelope"></i
+            ></label>
+            <input
+              class="contact-input"
+              autocomplete="email"
+              name="email"
+              id="E-mail"
+              type="email"
+              placeholder="Votre adresse e-mail"
+              required
+            /><br />
+
+            <label for="phone" class="form-label"
+              >Téléphone <i class="fa-solid fa-phone"></i
+            ></label>
+            <input
+              class="contact-input"
+              autocomplete="tel"
+              name="phone"
+              id="phone"
+              placeholder="Votre téléphone (facultatif)"
+            /><br />
+
+            <label for="Message" class="form-label"
+              >Message <i class="fa-solid fa-inbox"></i
+            ></label>
+            <textarea
+              class="contact-input"
+              name="message"
+              autocomplete="off"
+              placeholder="Votre message..."
+              required
+            ></textarea
+            ><br />
+
+            <input type="submit" class="form-btn" />
+            <div id="formMessage"></div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="index-footer">
-        <div>
-            <p class="footer-text">© 2024 - APHTON MINNE - Tous droits réservés</p>
-            <p class="article-text"><a href="legal.html">Mentions légales</a></p>
-        </div>
+      <div>
+        <p class="footer-text">© 2024 - APHTON MINNE - Tous droits réservés</p>
+        <p class="article-text"><a href="legal.html">Mentions légales</a></p>
+      </div>
     </footer>
     <script src="form.js"></script>
-</body>
+  </body>
 </html>
